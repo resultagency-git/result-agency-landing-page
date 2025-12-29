@@ -1,0 +1,52 @@
+.rc-tooltip {
+    width: min-content !important;
+    z-index: 9999999;
+}
+
+.rc-tooltip.rc-tooltip-fade-appear,
+.rc-tooltip.rc-tooltip-fade-enter {
+    opacity: 0;
+}
+.rc-tooltip.rc-tooltip-fade-enter,
+.rc-tooltip.rc-tooltip-fade-leave {
+    display: block;
+}
+.rc-tooltip-fade-enter,
+.rc-tooltip-fade-appear {
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+.rc-tooltip-fade-leave {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+.rc-tooltip-fade-enter.rc-tooltip-fade-enter-active,
+.rc-tooltip-fade-appear.rc-tooltip-fade-appear-active {
+    animation-name: rcToolTipZoomIn;
+    animation-play-state: running;
+}
+.rc-tooltip-fade-leave.rc-tooltip-fade-leave-active {
+    animation-name: rcToolTipZoomOut;
+    animation-play-state: running;
+}
+@keyframes rcToolTipZoomIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes rcToolTipZoomOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
