@@ -28,7 +28,7 @@ export const SectionHeroBox = styled.section`
   @media (max-width: 769px) {
     section {
       img {
-        top: 70px;
+        top: 80px;
       }
     }
   }
