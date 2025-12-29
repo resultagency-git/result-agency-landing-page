@@ -18,10 +18,9 @@ export const SectionHeroBox = styled.section`
 
     img {
       width: 200px;
-      top: 110px;
+      top: 120px;
       position: absolute;
       left: calc(50% - 100px);
-      z-index: -1;
       opacity: 0.6;
     }
   }
