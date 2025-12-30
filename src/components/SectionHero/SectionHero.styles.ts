@@ -6,6 +6,11 @@ export const SectionHeroBox = styled.section`
   display: flex;
   justify-content: center;
 
+  /* height: calc(100dvh - var(--height-topbar)); */
+  height: 100dvh;
+
+  background-color: var(--theme-bg-main);
+
   section {
     width: 100%;
     max-width: 1180px;
