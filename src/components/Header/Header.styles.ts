@@ -32,6 +32,8 @@ export const HeaderBox = styled.section`
       .item-link {
         font-weight: bold;
 
+        color: var(--theme-color-primary-hex);
+
         &:hover {
           color: var(--theme-bg-primary-hex);
 
@@ -85,9 +87,9 @@ export const HeaderBox = styled.section`
         background-color: var(--theme-bg-primary-hex);
         color: var(--theme-bg-secondary-hex);
 
-        padding: 4px 10px 0px;
+        padding: 4px 6px 0px;
 
-        border-radius: 50px;
+        border-radius: 10px;
         .item-button-i {
           font-size: 28px;
           line-height: 1;
